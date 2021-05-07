@@ -1170,7 +1170,7 @@ a:hover {
 }
 
 .php-email-form button[type="submit"] {
-  background: #0078ff;
+  background: #352d8b;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1479,4 +1479,10 @@ footer .credits a {
     opacity: 0;
     transform: translate(-10px, -10px);
   }
+}
+
+@media screen and (max-width: 500px){
+  .arrow{
+  bottom: 60px;
+}
 }
