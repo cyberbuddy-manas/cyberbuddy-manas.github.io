@@ -1486,3 +1486,8 @@ footer .credits a {
   bottom: 66px;
 }
 }
+@media screen and (max-height: 700px){
+  .arrow{
+  visibility: hidden;
+}
+}
