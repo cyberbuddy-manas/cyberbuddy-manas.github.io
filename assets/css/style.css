@@ -2,6 +2,15 @@ body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
+body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
 
 h1,
 h2,
@@ -119,7 +128,7 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .sect-mt4 {
@@ -159,7 +168,7 @@ a:hover {
 
 /*--/ Title Left /--*/
 .title-box-2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .title-left {
@@ -185,7 +194,7 @@ a:hover {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -460,7 +469,8 @@ a:hover {
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
-  padding: 12px 0;
+  padding: 8px 0;
+  padding-bottom: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -729,7 +739,7 @@ a:hover {
 .hero .hero-title {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 @media (min-width: 768px) {
@@ -1483,11 +1493,26 @@ footer .credits a {
 
 @media screen and (max-width: 500px){
   .arrow{
-  bottom: 66px;
+  bottom: 70px;
 }
 }
 @media screen and (max-height: 700px){
   .arrow{
   visibility: hidden;
 }
+}
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700)
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400)
+ .groucho {
+   position: relative;
+   font-family: 'Sanchez', serif;
+}
+ .groucho:after {
+   content: '\201D';
+}
+
+.footer2 {
+  font-family: 'Noto Sans',sans-serif; 
 }
