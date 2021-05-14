@@ -99,6 +99,14 @@ exampleCarousel.setControls();
 // exampleCarousel.setNav();
 exampleCarousel.useControls();
 
+function clicktrigger()
+  {
+    document.querySelector('.gallery-controls-next').click();
+    console.log("hi");
+  }
+  clicktrigger();
+  setInterval(clicktrigger,3000);
+
 //auto slider
 
 /*var slideIndex = 0;

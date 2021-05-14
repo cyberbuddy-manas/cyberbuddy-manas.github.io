@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>It's Your Cyberbuddy</title>
+	<title>Your Cyberbuddy</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
 
@@ -21,6 +21,8 @@
 
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/carousel/carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/text-morph/text-morph.css">
+
 </head>
 
 <body>
@@ -70,16 +72,39 @@
 		<div class="overlay-itro"></div>
 		<div class="hero-content display-table">
 			<div class="table-cell">
-				<div class="container" style="margin-top: 300px;">
-					<h1 class="hero-title mb-4">I am Manas Gupta</h1>
-					<p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Enthusiast, Freelancer, Designer"></span></p>
-					<div>
-						<a class="scrollto" href="#about"><span class="arrow"></span></a>
+				<div class="container" style="margin-top: 400px;">
+					<h1 style="margin-bottom: 0px !important;" class="hero-title mb-4">I am Manas Gupta</h1>
+					<!-- <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Enthusiast, Freelancer, Designer"></span></p>
+					<div> -->
+
+					<!-- The two texts -->
+					<div id="container">
+						<span id="text1"></span>
+						<span id="text2"></span>
 					</div>
+
+					<!-- The SVG filter used to create the merging effect -->
+					<svg id="filters">
+						<defs>
+							<filter id="threshold">
+								<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+								<feColorMatrix in="SourceGraphic"
+										type="matrix"
+										values="1 0 0 0 0
+												0 1 0 0 0
+												0 0 1 0 0
+												0 0 0 255 -140" />
+							</filter>
+						</defs>
+					</svg>
+					<script type="text/javascript" src="assets/text-morph/text-morph.js"></script>
+
+					<a class="scrollto" href="#about"><span class="arrow"></span></a>
 				</div>
-			</div>
+			</div>	
 		</div>
-	</div><!-- End Hero Section -->
+	</div>
+	<!-- End Hero Section -->
 
 	<main id="main">
 
@@ -141,12 +166,12 @@
 											Heyya!! Am an Enthusiast looking for some fun opportunities. Passion for technology is what drives me to look forward to the future. To understand my relationship with technology, I opted for a Bachelors degree in computer science. Being a part of program exposes me to new fields and possibilities in technology on the daily basis.
 										</p>
 										<div class="justify-content-center" style="padding-top:30px">
-											<img src="assets/img/logos/html.png" title style="width:97px;padding-left:30px; padding-top:20px;">
-											<img src="assets/img/logos/css.png" style="width:90px;padding-left: 30px; padding-top:20px;">
-											<img src="assets/img/logos/bootstrap.png" style="width:87px;padding-left: 30px; padding-top:20px;">
-											<img src="assets/img/logos/js.png" style="width:90px;padding-left: 30px; padding-top:20px;">
-											<img src="assets/img/logos/git.png" style="width:90px;padding-left: 30px; padding-top:20px;">
-											<img src="assets/img/logos/linux.png" style="width:90px;padding-left: 30px; padding-top:20px;">
+											<img src="assets/img/logos/html.png" title="HTML5" style="width:97px;padding-left:30px; padding-top:20px;">
+											<img src="assets/img/logos/css.png" title="CSS3" style="width:90px;padding-left: 30px; padding-top:20px;">
+											<img src="assets/img/logos/bootstrap.png" title="Bootstrap" style="width:87px;padding-left: 30px; padding-top:20px;">
+											<img src="assets/img/logos/js.png" title="JS" style="width:90px;padding-left: 30px; padding-top:20px;">
+											<img src="assets/img/logos/git.png" title="GIT" style="width:90px;padding-left: 30px; padding-top:20px;">
+											<img src="assets/img/logos/linux.png" title="Linux" style="width:90px;padding-left: 30px; padding-top:20px;">
 										</div>
 									</div>
 								</div>
@@ -709,7 +734,7 @@
 													</div>
 													<div class="col-md-12 mb-3">
 														<div class="form-group">
-															<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+															<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required >
 														</div>
 													</div>
 													<div class="col-md-12 mb-3">
