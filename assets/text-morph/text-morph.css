@@ -17,7 +17,6 @@ body {
 	top: 0;
 	bottom: 0;
 */	
-	opacity: 0.5;
 	display: flex;
 	justify-content: center;
 	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
@@ -29,9 +28,8 @@ body {
 	position: absolute;
 	width: 100%;
 	display: inline-block;
-	
 	font-family: 'Raleway', sans-serif;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
 	color: white;
 	text-align: center;
 	letter-spacing: 1.7px;
