@@ -88,7 +88,7 @@ a:hover {
 
 @media (max-width: 1024px) {
   .bg-image {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 
@@ -733,18 +733,19 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .7;
+  opacity: 1;
 }
 
 .hero .hero-title {
   color: #fff;
   font-weight: 600;
-  font-size: 2.7rem;
+  font-size: 3.2rem;
+  text-shadow: 5px 5px 30px rgb(0, 0, 0,0.7);
 }
 
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
 }
 
