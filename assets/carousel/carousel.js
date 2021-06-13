@@ -102,7 +102,6 @@ exampleCarousel.useControls();
 function clicktrigger()
   {
     document.querySelector('.gallery-controls-next').click();
-    console.log("hi");
   }
   clicktrigger();
   setInterval(clicktrigger,3000);

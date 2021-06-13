@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #352d8b;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -421,7 +421,7 @@ a:hover {
 
 .button-a {
   text-decoration: none;
-  background-color: #0078ff;
+  background-color: #352d8b;
   color: #fff;
   border-color: #cde1f8;
 }
@@ -468,7 +468,7 @@ a:hover {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0);
   padding: 8px 0;
   padding-bottom: 12px;
 }
@@ -504,7 +504,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: rgb(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 600;
   padding: 0;
@@ -529,7 +529,7 @@ a:hover {
   bottom: -6px;
   left: 0;
   width: 0;
-  background-color: #fff;
+  background-color: #a49fe0;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -672,7 +672,7 @@ a:hover {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #0078ff;
+  color: #352d8b;
 }
 
 .navbar-mobile .getstarted {
@@ -1238,7 +1238,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
+  background-color: #352d8b;
   border-radius: 4px;
 }
 
@@ -1448,6 +1448,11 @@ footer .credits a {
 
 /*Changes*/
 
+.extra-padd-down {
+  padding: 20px 0;
+}
+
+
 .arrow,
 .arrow:before {
   position: absolute;
@@ -1516,4 +1521,8 @@ footer .credits a {
 
 .footer2 {
   font-family: 'Noto Sans',sans-serif; 
+}
+
+.xtra_css {
+  height: 120px;
 }
